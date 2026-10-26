@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIC - Saída Antecipada</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <input type="checkbox" id="sidebar-checkbox">
+
+        <label for="sidebar-checkbox" class="sidebar-btn">≡</label>
+
+        <nav class="sidebar">
+            <ul class="sidebar-list">
+                <li class="sidebar-item"><a href="sobre.html" class="sidebar-link">&bull; Sobre nós</a></li>
+                <li class="sidebar-item"><a href="ajuda.html" class="sidebar-link">&bull; Ajuda</a></li>
+                <li class="sidebar-item"><a href="config.html" class="sidebar-link">&bull; Configurações</a></li>
+            </ul>
+        </nav>
+
+        <div class="logo">
+            <h1>
+                <span class="text-highlight">S</span><span>ISTEMA </span><span
+                    class="text-highlight">I</span><span>NTEGRADO DE </span><span
+                    class="text-highlight">C</span><span>AMPUS</span>
+            </h1>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="navbar-link">Início</a>
+            <a href="manutencao.html" class="navbar-link">Manutenção</a>
+            <a href="saida.html" class="navbar-link">Saída Antecipada</a>
+            <a href="comunicacao.html" class="navbar-link">Comunicação</a>
+        </nav>
+    </header>
+
+    <div class="exit-top-bar">
+        <button class="exit-history-btn">Histórico</button>
+    </div>
+
+    <main class="exit-container">
+
+        <section class="exit-panel exit-panel-left">
+            <h2 class="exit-panel-title">Programe sua saída antecipada</h2>
+            <div class="exit-panel-inner">
+                <form class="exit-form">
+                    <div class="exit-form-row">
+                        <div class="exit-form-group">
+                            <label>Nome</label>
+                            <input type="text" class="exit-input">
+                        </div>
+                        <div class="exit-form-group">
+                            <label>Sobrenome</label>
+                            <input type="text" class="exit-input">
+                        </div>
+                    </div>
+
+                    <div class="exit-form-row">
+                        <div class="exit-form-group" style="flex: 2;">
+                            <label>CPF</label>
+                            <input type="text" class="exit-input">
+                        </div>
+                        <div class="exit-form-group" style="flex: 2;">
+                            <label>Matrícula</label>
+                            <input type="text" class="exit-input">
+                        </div>
+                        <div class="exit-form-group" style="flex: 1;">
+                            <label>Sala</label>
+                            <select class="exit-select">
+                                <option value="">--</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="exit-form-group">
+                        <label>Data de saída</label>
+                        <div class="exit-form-row">
+                            <select class="exit-select">
+                                <option value="">Dia:</option>
+                            </select>
+                            <select class="exit-select">
+                                <option value="">Mês:</option>
+                            </select>
+                            <select class="exit-select">
+                                <option value="">Ano:</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="exit-form-group">
+                        <label>Motivo:</label>
+                        <input type="text" class="exit-input">
+                    </div>
+
+                    <div class="exit-form-group">
+                        <input type="text" class="exit-input" placeholder="Anexar arquivo"
+                            style="text-align: center; cursor: pointer;">
+                    </div>
+
+                    <div class="exit-form-actions">
+                        <button type="button" class="exit-submit-btn">Enviar</button>
+                        <button type="button" class="exit-help-btn">Ajuda</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <section class="exit-panel exit-panel-right">
+            <h2 class="exit-panel-title">Pendências</h2>
+            <div class="exit-panel-inner">
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <span class="text-highlight">SIC</span>
+        <small class="footer-copyright">&copy; 2026 Sistema Integrado de Campus. Todos os direitos reservados.</small>
+    </footer>
+
+</body>
+
+</html>
